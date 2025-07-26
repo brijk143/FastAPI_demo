@@ -1,9 +1,8 @@
 # FastAPI_demo
 
-# 🏥 Patient Management API using FastAPI
+# Patient Management API using FastAPI
 
-This is a simple and fully functional  **FastAPI** for managing patient health records. The application allows you to **create**, **view**, **edit**, **delete**, and **sort** patient data — all while automatically calculating their **BMI (Body Mass Index)** and assigning a **health verdict** like *Underweight*, *Normal*, *Overweight*, or *Obese*.
-
+This is a simple and fully functional  **FastAPI** for managing patient health records. The application allows you to **create**, **view**, **edit**, **delete**, and **sort** patient data 
 
 
 ##  What this project does
@@ -18,18 +17,23 @@ This is a simple and fully functional  **FastAPI** for managing patient health r
 
 **ALL the required steps to run locally**
 ###
--1. Clone the Repository
--2. Create a Virtual Environment
+1. Clone the Repository
+
+2. Create a Virtual Environment
    python -m venv venv
    source venv/bin/activate      # On macOS/Linux
    venv\Scripts\activate         # On Windows
 
--3.Install the Dependencies
+3.Install the Dependencies
 pip install -r requirements.txt
--4.Run the API
+
+4.Run the API
 uvicorn main:app --reload
 
+5.Now visit:
 
+http://127.0.0.1:8000 – for home
+http://127.0.0.1:8000/docs – for Swagger API docs
 
 **About Endpoint**
 - GET `/` – Returns a welcome message  
