@@ -17,7 +17,7 @@ This is a simple and fully functional  **FastAPI** for managing patient health r
 
 
 **ALL the required steps to run locally**
-
+###
 1- Clone the Repository
 2-Create a Virtual Environment
   python -m venv venv
