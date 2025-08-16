@@ -5,7 +5,7 @@ from typing import Annotated,Literal
 from typing import List,Optional
 from fastapi import HTTPException,Query
 from fastapi.responses import JSONResponse
-
+# pydantic model 
 class Patient(BaseModel):
     id: Annotated[str, Field(..., description='Unique identifier for the patient',examples=['P001'])]
     name: Annotated[str, Field(..., description='Name of the patient')]
@@ -139,4 +139,5 @@ def delete_patient(patient_id: str):
 
     # Save updated data back to the file
     save_data(data)
+
     return JSONResponse(status_code=200, content={"message": "Patient deleted successfully"})   
